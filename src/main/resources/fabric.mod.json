@@ -17,10 +17,8 @@
 	"entrypoints": {
 		"main": [
 			"net.arthur.Mod"
-		],
-		"client": [
-			"net.arthur.ModClient"
 		]
+
 	},
 	"mixins": [
 		"mod.mixins.json"
