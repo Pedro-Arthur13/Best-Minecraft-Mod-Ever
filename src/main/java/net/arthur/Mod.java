@@ -1,6 +1,6 @@
 package net.arthur;
 
-import net.arthur.registry.ModEntities;
+import net.arthur.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import org.apache.logging.log4j.LogManager;

@@ -2,19 +2,17 @@ package net.arthur.client.render;
 
 import net.arthur.entity.CustomPlayerEntity;
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
-import net.minecraft.client.render.entity.LivingEntityRenderer;
+import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.util.Identifier;
 
-public class CustomPlayerRenderer extends LivingEntityRenderer<CustomPlayerEntity, PlayerEntityModel<CustomPlayerEntity>> {
-    private static final Identifier TEXTURE = new Identifier("modid", "textures/entity/custom_player.png");
-
-    public CustomPlayerRenderer(EntityRenderDispatcher dispatcher) {
-        super(dispatcher, new PlayerEntityModel<>(0, false), 0.5f);
+public class CustomPlayerRenderer extends MobEntityRenderer<CustomPlayerEntity, PlayerEntityModel<CustomPlayerEntity>> {
+    public CustomPlayerRenderer(EntityRenderDispatcher entityRenderDispatcher) {
+        super(entityRenderDispatcher, new PlayerEntityModel<>(0.0f, false), 0.5f);
     }
 
     @Override
     public Identifier getTexture(CustomPlayerEntity entity) {
-        return TEXTURE;
+        return entity.getPlayerType().getTexture();
     }
 }
