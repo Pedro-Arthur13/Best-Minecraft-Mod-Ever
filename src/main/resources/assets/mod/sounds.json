@@ -3,5 +3,8 @@
     "sounds": [
       "mod:jumpscare"
     ]
+  },
+  "davi": {
+    "sounds": ["mod:davi"]
   }
 }

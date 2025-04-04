@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "mod",
 	"version": "${version}",
-	"name": "mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Shitpost Goofy Rizzler OMGGGG",
+	"description": "Skbiid toilet!",
 	"authors": [
-		"Me!"
+		"Pepino Nobilis"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -26,7 +26,7 @@
 	"depends": {
 		"fabricloader": ">=0.16.12",
 		"minecraft": "~1.16.5",
-		"java": ">=8",
+		"java": ">=17",
 		"fabric": "*"
 	},
 	"suggests": {

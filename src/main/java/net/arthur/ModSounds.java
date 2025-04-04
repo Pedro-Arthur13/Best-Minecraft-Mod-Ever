@@ -6,6 +6,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModSounds {
     public static final SoundEvent JUMPSCARE_SOUND = registerSound("jumpscare");
+    public static final SoundEvent DAVI = registerSound("davi");
     public static final SoundEvent MYMUSIC = registerSound("mymusic");
 
     private static SoundEvent registerSound(String name) {
