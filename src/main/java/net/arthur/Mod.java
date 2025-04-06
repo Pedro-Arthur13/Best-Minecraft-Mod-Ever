@@ -1,6 +1,7 @@
 package net.arthur;
 
 import net.arthur.event.ModEvents;
+import net.arthur.item.ModArmors;
 import net.arthur.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -19,6 +20,7 @@ public class Mod implements ModInitializer {
 		ModSounds.registerModSounds();
 		ModItems.registerItems(); // <- aqui está certo
 		ModEvents.registerEvents();
+		ModArmors.registerArmors();
 
 
 

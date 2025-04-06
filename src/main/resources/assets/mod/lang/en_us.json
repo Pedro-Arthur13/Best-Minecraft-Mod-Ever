@@ -1,5 +1,7 @@
 {
   "item.mod.clt": "Carteira de Trabalho",
-  "itemGroup.mod.main": "E Naipe naipe"
-
+  "item.mod.glass_helmet": "Glass Helmet",
+  "item.mod.glass_chestplate": "Glass Chestplate",
+  "item.mod.glass_leggings": "Glass Leggings",
+  "item.mod.glass_boots": "Glass Boots"
 }

@@ -19,7 +19,11 @@ public class ModelJsonGenerator {
                 "clt",
                 "escala_6_1",
                 "alma_de_estagiario",
-                "seloco_nao_compensa"
+                "seloco_nao_compensa",
+                "glass_leggings",
+                "glass_boots",
+                "glass_chestplate",
+                "glass_helmet"
         );
 
         generateItemModels(itemNames);
