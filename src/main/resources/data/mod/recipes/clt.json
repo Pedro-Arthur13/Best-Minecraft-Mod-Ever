@@ -1,17 +1,50 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
+        {
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+"   ",
     "ECS",
     "   "
-  ],
-  "key": {
-    "E": { "item": "mod:escala_6_1" },
-    "C": { "item": "mod:contrato" },
-    "S": { "item": "mod:seloco_nao_compensa" }
+          ],
+          "key": {
+"S": {
+    "item": "mod:seloco_nao_compensa"
   },
-  "result": {
-    "item": "mod:clt",
-    "count": 1
+  "E": {
+    "item": "mod:escala_6_1"
+  },
+  "C": {
+    "item": "mod:contrato"
   }
-}
+          },
+          "result": {
+            "item": "mod:clt",
+            "count": 1
+          },
+          "criteria": {
+"has_mod_seloco_nao_compensa": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "mod:seloco_nao_compensa" }
+      ]
+    }
+  },
+  "has_mod_escala_6_1": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "mod:escala_6_1" }
+      ]
+    }
+  },
+  "has_mod_contrato": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "mod:contrato" }
+      ]
+    }
+  }
+          },
+          "requirements": [["has_mod_seloco_nao_compensa", "has_mod_escala_6_1", "has_mod_contrato"]]
+        }

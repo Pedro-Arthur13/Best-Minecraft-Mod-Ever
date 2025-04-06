@@ -1,0 +1,41 @@
+    {
+      "parent": "minecraft:recipes/root",
+      "rewards": {
+        "recipes": [
+          "mod:clt"
+        ]
+      },
+      "criteria": {
+"has_mod_seloco_nao_compensa": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "mod:seloco_nao_compensa" }
+        ]
+      }
+    },
+    "has_mod_escala_6_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "mod:escala_6_1" }
+        ]
+      }
+    },
+    "has_mod_contrato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "mod:contrato" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mod:clt"
+      }
+    }
+      },
+      "requirements": [["has_mod_seloco_nao_compensa", "has_mod_escala_6_1", "has_mod_contrato", "has_the_recipe"]]
+    }

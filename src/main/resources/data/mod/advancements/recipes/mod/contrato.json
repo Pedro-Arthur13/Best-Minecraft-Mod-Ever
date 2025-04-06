@@ -1,0 +1,49 @@
+    {
+      "parent": "minecraft:recipes/root",
+      "rewards": {
+        "recipes": [
+          "mod:contrato"
+        ]
+      },
+      "criteria": {
+"has_minecraft_leather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:leather" }
+        ]
+      }
+    },
+    "has_minecraft_paper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:paper" }
+        ]
+      }
+    },
+    "has_minecraft_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:feather" }
+        ]
+      }
+    },
+    "has_minecraft_ink_sac": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:ink_sac" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mod:contrato"
+      }
+    }
+      },
+      "requirements": [["has_minecraft_leather", "has_minecraft_paper", "has_minecraft_feather", "has_minecraft_ink_sac", "has_the_recipe"]]
+    }

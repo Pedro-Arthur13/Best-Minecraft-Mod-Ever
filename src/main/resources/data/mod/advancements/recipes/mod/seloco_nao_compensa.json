@@ -1,0 +1,33 @@
+    {
+      "parent": "minecraft:recipes/root",
+      "rewards": {
+        "recipes": [
+          "mod:seloco_nao_compensa"
+        ]
+      },
+      "criteria": {
+"has_minecraft_sugar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:sugar" }
+        ]
+      }
+    },
+    "has_minecraft_rotten_flesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:rotten_flesh" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mod:seloco_nao_compensa"
+      }
+    }
+      },
+      "requirements": [["has_minecraft_sugar", "has_minecraft_rotten_flesh", "has_the_recipe"]]
+    }

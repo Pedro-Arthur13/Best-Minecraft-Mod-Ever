@@ -1,13 +1,39 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SSS",
-    "SCS",
-    "SSS"
-  ],
-  "key": {
-    "S": { "item": "minecraft:sugar" },
-    "C": { "item": "minecraft:rotten_flesh" }
+        {
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+"AAA",
+    "ACA",
+    "AAA"
+          ],
+          "key": {
+"A": {
+    "item": "minecraft:sugar"
   },
-  "result": { "item": "mod:seloco_nao_compensa", "count": 1 }
-}
+  "C": {
+    "item": "minecraft:rotten_flesh"
+  }
+          },
+          "result": {
+            "item": "mod:seloco_nao_compensa",
+            "count": 1
+          },
+          "criteria": {
+"has_minecraft_sugar": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:sugar" }
+      ]
+    }
+  },
+  "has_minecraft_rotten_flesh": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:rotten_flesh" }
+      ]
+    }
+  }
+          },
+          "requirements": [["has_minecraft_sugar", "has_minecraft_rotten_flesh"]]
+        }

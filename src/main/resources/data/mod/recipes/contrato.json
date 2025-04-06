@@ -1,15 +1,61 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "LPL",
+        {
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+"LPL",
     "BFB",
     "LPL"
-  ],
-  "key": {
-    "L": { "item": "minecraft:leather" },
-    "P": { "item": "minecraft:paper" },
-    "B": { "item": "minecraft:ink_sac" },
-    "F": { "item": "minecraft:feather" }
+          ],
+          "key": {
+"L": {
+    "item": "minecraft:leather"
   },
-  "result": { "item": "mod:contrato", "count": 1 }
-}
+  "P": {
+    "item": "minecraft:paper"
+  },
+  "F": {
+    "item": "minecraft:feather"
+  },
+  "B": {
+    "item": "minecraft:ink_sac"
+  }
+          },
+          "result": {
+            "item": "mod:contrato",
+            "count": 1
+          },
+          "criteria": {
+"has_minecraft_leather": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:leather" }
+      ]
+    }
+  },
+  "has_minecraft_paper": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:paper" }
+      ]
+    }
+  },
+  "has_minecraft_feather": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:feather" }
+      ]
+    }
+  },
+  "has_minecraft_ink_sac": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:ink_sac" }
+      ]
+    }
+  }
+          },
+          "requirements": [["has_minecraft_leather", "has_minecraft_paper", "has_minecraft_feather", "has_minecraft_ink_sac"]]
+        }

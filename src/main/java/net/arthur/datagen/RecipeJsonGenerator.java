@@ -116,6 +116,25 @@ public class RecipeJsonGenerator {
         generateShapedRecipe("glass_helmet", List.of("GGG", "G G", "   "), List.of(
                 new Input('G', "minecraft:glass")
         ));
+        generateShapedRecipe("clt", List.of("   ", "ECS", "   "), List.of(
+                new Input('S', "mod:seloco_nao_compensa"),
+                new Input('E', "mod:escala_6_1"),
+                new Input('C', "mod:contrato")
+        ));
+        generateShapedRecipe("contrato", List.of("LPL", "BFB", "LPL"), List.of(
+                new Input('L', "minecraft:leather"),
+                new Input('P', "minecraft:paper"),
+                new Input('F', "minecraft:feather"),
+                new Input('B', "minecraft:ink_sac")
+        ));
+        generateShapedRecipe("escala_6_1", List.of("AAA","ACA","AAA"), List.of(
+                new Input('A', "mod:alma_de_estagiario"),
+                new Input('C', "mod:contrato")
+        ));
+        generateShapedRecipe("seloco_nao_compensa", List.of("AAA","ACA","AAA"), List.of(
+                new Input('A', "minecraft:sugar"),
+                new Input('C', "minecraft:rotten_flesh")
+        ));
     }
 
     private static void generateShapedRecipe(String name, List<String> pattern, List<Input> inputs) {

@@ -1,13 +1,39 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "AAA",
+        {
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+"AAA",
     "ACA",
     "AAA"
-  ],
-  "key": {
-    "A": { "item": "mod:alma_de_estagiario" },
-    "C": { "item": "mod:contrato" }
+          ],
+          "key": {
+"A": {
+    "item": "mod:alma_de_estagiario"
   },
-  "result": { "item": "mod:escala_6_1", "count": 1 }
-}
+  "C": {
+    "item": "mod:contrato"
+  }
+          },
+          "result": {
+            "item": "mod:escala_6_1",
+            "count": 1
+          },
+          "criteria": {
+"has_mod_alma_de_estagiario": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "mod:alma_de_estagiario" }
+      ]
+    }
+  },
+  "has_mod_contrato": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "mod:contrato" }
+      ]
+    }
+  }
+          },
+          "requirements": [["has_mod_alma_de_estagiario", "has_mod_contrato"]]
+        }

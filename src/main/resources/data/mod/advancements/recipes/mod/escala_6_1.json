@@ -1,0 +1,33 @@
+    {
+      "parent": "minecraft:recipes/root",
+      "rewards": {
+        "recipes": [
+          "mod:escala_6_1"
+        ]
+      },
+      "criteria": {
+"has_mod_alma_de_estagiario": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "mod:alma_de_estagiario" }
+        ]
+      }
+    },
+    "has_mod_contrato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "mod:contrato" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mod:escala_6_1"
+      }
+    }
+      },
+      "requirements": [["has_mod_alma_de_estagiario", "has_mod_contrato", "has_the_recipe"]]
+    }
