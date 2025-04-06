@@ -1,5 +1,6 @@
 package net.arthur;
 
+import net.arthur.event.ModEvents;
 import net.arthur.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
@@ -15,6 +16,8 @@ public class Mod implements ModInitializer {
 		// Inicializa os sons personalizados
 		ModSounds.registerModSounds();
 		ModItems.registerItems(); // <- aqui está certo
+		ModEvents.registerEvents();
+
 
 
 		// Registra os comandos personalizados

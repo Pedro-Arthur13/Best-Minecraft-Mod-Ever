@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": { "item": "minecraft:sugar" },
+    "C": { "item": "minecraft:rotten_flesh" }
+  },
+  "result": { "item": "mod:seloco_nao_compensa", "count": 1 }
+}

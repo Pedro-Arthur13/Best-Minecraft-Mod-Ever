@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ACA",
+    "AAA"
+  ],
+  "key": {
+    "A": { "item": "mod:alma_de_estagiario" },
+    "C": { "item": "mod:contrato" }
+  },
+  "result": { "item": "mod:escala_6_1", "count": 1 }
+}

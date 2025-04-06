@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "ECS",
+    "   "
+  ],
+  "key": {
+    "E": { "item": "mod:escala_6_1" },
+    "C": { "item": "mod:contrato" },
+    "S": { "item": "mod:seloco_nao_compensa" }
+  },
+  "result": {
+    "item": "mod:clt",
+    "count": 1
+  }
+}
