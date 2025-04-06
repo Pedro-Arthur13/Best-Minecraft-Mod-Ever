@@ -3,6 +3,7 @@ package net.arthur;
 import net.arthur.event.ModEvents;
 import net.arthur.item.ModArmors;
 import net.arthur.item.ModItems;
+import net.arthur.status.ModEffects;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
@@ -21,6 +22,7 @@ public class Mod implements ModInitializer {
 		ModItems.registerItems(); // <- aqui está certo
 		ModEvents.registerEvents();
 		ModArmors.registerArmors();
+		ModEffects.registerEffects();
 
 
 
