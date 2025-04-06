@@ -1,0 +1,33 @@
+    {
+      "parent": "minecraft:recipes/root",
+      "rewards": {
+        "recipes": [
+          "mod:glass_boots"
+        ]
+      },
+      "criteria": {
+"has_minecraft_air": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:air" }
+        ]
+      }
+    },
+    "has_minecraft_glass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:glass" }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mod:glass_boots"
+      }
+    }
+      },
+      "requirements": [["has_minecraft_air", "has_minecraft_glass", "has_the_recipe"]]
+    }

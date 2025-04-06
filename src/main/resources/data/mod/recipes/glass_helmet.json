@@ -1,0 +1,28 @@
+        {
+          "type": "minecraft:crafting_shaped",
+          "pattern": [
+"GGG",
+    "G G",
+    "   "
+          ],
+          "key": {
+"G": {
+    "item": "minecraft:glass"
+  }
+          },
+          "result": {
+            "item": "mod:glass_helmet",
+            "count": 1
+          },
+          "criteria": {
+"has_minecraft_glass": {
+    "trigger": "minecraft:inventory_changed",
+    "conditions": {
+      "items": [
+        { "item": "minecraft:glass" }
+      ]
+    }
+  }
+          },
+          "requirements": [["has_minecraft_glass"]]
+        }
