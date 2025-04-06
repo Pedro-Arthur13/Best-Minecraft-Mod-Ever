@@ -3,11 +3,20 @@ package net.arthur;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
+import net.arthur.network.JumpscarePacket;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.command.argument.EntityArgumentType;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.EffectCommand;
 import net.minecraft.server.command.ServerCommandSource;
 import static net.minecraft.server.command.CommandManager.literal;
+
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 public class CustomCommands {
 
@@ -47,14 +56,25 @@ public class CustomCommands {
     private static void registerJumpscareCommand(CommandDispatcher<ServerCommandSource> dispatcher) {
         dispatcher.register(
                 literal("jumpscare")
-                        .requires(src -> src.hasPermissionLevel(0))
-                        .executes(ctx -> {
-                            JumpscareController.active = true;
-                            JumpscareController.startTime = System.currentTimeMillis();
-                            return 1;
-                        })
+                        .requires(src -> src.hasPermissionLevel(2)) // Apenas operadores
+                        .then(CommandManager.argument("target", EntityArgumentType.player())
+                                .executes(ctx -> {
+                                    ServerPlayerEntity target = EntityArgumentType.getPlayer(ctx, "target");
+
+                                    // Envia o packet pro cliente do player
+                                    PacketByteBuf buf = PacketByteBufs.create();
+                                    ServerPlayNetworking.send(target, new Identifier("mod", "jumpscare"), buf);
+
+                                    ctx.getSource().sendFeedback(
+                                            Text.of("§cJumpscare enviado para " + target.getEntityName()), false);
+
+                                    return Command.SINGLE_SUCCESS;
+                                })
+                        )
         );
     }
+
+
 
 
 }
