@@ -22,7 +22,7 @@ public class Mod implements ModInitializer {
 		ModItems.registerItems(); // <- aqui está certo
 		ModEvents.registerEvents();
 		ModArmors.registerArmors();
-		ModEffects.registerEffects();
+//		ModEffects.registerEffects();
 
 
 

@@ -23,7 +23,8 @@ public class ModelJsonGenerator {
                 "glass_leggings",
                 "glass_boots",
                 "glass_chestplate",
-                "glass_helmet"
+                "glass_helmet",
+                "soul_intern_sword"
         );
 
         generateItemModels(itemNames);

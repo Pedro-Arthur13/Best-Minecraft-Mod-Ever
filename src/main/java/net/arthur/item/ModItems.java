@@ -1,8 +1,10 @@
 package net.arthur.item;
 
 import net.arthur.item.ItemCLT;
+import net.arthur.item.custom.SoulInternSwordItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -22,6 +24,13 @@ public class ModItems {
 
     public static final Item CONTRATO = registerItem("contrato",
             new Item(new FabricItemSettings().maxCount(1).group(ItemGroup.MISC)));
+    public static final Item SOUL_INTERN_SWORD = registerItem("soul_intern_sword",
+            new SoulInternSwordItem(
+                    ToolMaterials.NETHERITE, // ou Material customizado
+                    10, -2.4F,
+                    new FabricItemSettings().group(ItemGroup.COMBAT).maxCount(1)
+            )
+    );
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("mod", name), item);

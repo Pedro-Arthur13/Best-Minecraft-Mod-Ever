@@ -15,6 +15,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     GLASS("glass", 15, new int[]{2, 5, 6, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f,
             () -> Ingredient.ofItems(Items.IRON_INGOT));
 
+
     private static final int[] BASE_DURABILITY = {13, 15, 16, 11};
 
     private final String name;

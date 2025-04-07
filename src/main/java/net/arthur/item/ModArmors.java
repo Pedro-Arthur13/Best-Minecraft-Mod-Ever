@@ -12,7 +12,8 @@ public class ModArmors {
     // Exemplo de material de armadura customizado (você pode criar mais depois)
     public static final ArmorMaterial GLASS_MATERIAL = ModArmorMaterial.GLASS;
 
-    // Exemplo de armadura (você pode adicionar quantas quiser aqui)
+
+    // Vridu
     public static final Item GLASS_HELMET = register("glass_helmet",
             new ArmorItem(GLASS_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings().group(ItemGroup.COMBAT)));
 
@@ -24,6 +25,8 @@ public class ModArmors {
 
     public static final Item GLASS_BOOTS = register("glass_boots",
             new ArmorItem(GLASS_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().group(ItemGroup.COMBAT)));
+
+
 
     public static void registerArmors() {
         // Esse método só serve para garantir que a classe seja carregada

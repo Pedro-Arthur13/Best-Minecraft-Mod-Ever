@@ -5,7 +5,8 @@
 	"mixins": [
 		"InGameHudMixin",
 		"WitherSkeletonRaycastMixin",
-		"LivingEntityMixin"
+		"LivingEntityMixin",
+		"LivingEntityTickMixin"
 
 
 	],
